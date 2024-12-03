@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms Assignment</title>
+</head>
+<body>
+    <h1>HTML 5 Input Types</h1>
+
+    <h2>Implementing Email Input</h2>
+    <form action="/submit" method="post">
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="Enter your email" required>
+        <div role="alert" aria-live="assertive">Please enter a valid email address.</div>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <br>
+
+    <h2>Utilizing Number Input</h2>
+    <form action="/submit" method="post">
+        <label for="random-number">Enter a Positive Number:</label>
+        <input type="number" id="random-number" name="random-number" placeholder="0 - 1million" min="0" max="1000000" step="1">
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <h2>Employing Date Input</h2>
+    <form action="/submit" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <br>
+
+    <h2>Range Input</h2>
+    <form action="/submit" method="post">
+        <label for="rating">Rating for Form:</label>
+        <input type="number" name="rating" id="rating" placeholder="1-10" min="1" max="10" step="1">
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <h2>Capturing Color</h2>
+    <form>
+        <label for="color">Select a Color:</label>
+        <input type="color" name="color-selector" id="color-selector" value="#8C00FF">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <h1>Building a Comprehensive Web Form</h1>
+
+    <form>
+        <label><b>Choose a Preffered Programming Language:</b></label>
+        <select name="language" id="language">
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="CSS">CSS</option>
+        <option value="C++">C++</option>
+        <option value="HTML">HTML</option>
+        <option value="Javascript">Javascript</option>
+        <option value="Ruby">Ruby</option>
+        </select>
+
+        <label><b>Select Level of Expertise:</b></label>
+        <input type="radio" name="experitse" id="Beginner" value="Beginner">
+        <label for="Beginner">Beginner</label>
+        <input type="radio" name="experitse" id="Intermidiate" value="Intermediate">
+        <label for="Intermediate">Intermediate</label>
+        <input type="radio" name="experitse" id="Advanced" value="Advanced">
+        <label for="Advanced">Advanced</label>
+
+        <label><b>Select Preffered Development Platform(s):</b></label>
+        <label for="web">Web</label>
+        <input type="checkbox" name="web" id="web" value="Web">
+        <label for="desktop">Desktop</label>
+        <input type="checkbox" name="desktop" id="platform" value="Desktop">
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" name="mobile" id="mobile" value="Mobile">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
